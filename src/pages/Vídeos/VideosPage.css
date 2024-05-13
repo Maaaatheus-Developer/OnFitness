@@ -1,0 +1,70 @@
+/* VideosPage.css */
+
+h1 {
+    color: #FF8C00;
+    line-height: 50px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  h1:hover {
+    transform: scale(1.1);
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .video-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .video-card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .video-card:hover {
+    transform: scale(1.05);
+  }
+  
+  h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  @keyframes blink {
+    0%, 50%, 100% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0;
+    }
+  }
+  
+  h2 {
+    animation: blink 2s infinite; /* 2s é a duração da animação, e infinite faz a animação continuar indefinidamente */
+  }
+  
+  @keyframes blink {
+    0%, 50%, 100% {
+      color: #FF8C00; /* Cor durante os estágios 0%, 50% e 100% da animação */
+    }
+    25%, 75% {
+      color: #333; /* Cor durante os estágios 25% e 75% da animação */
+    }
+  }
+
+  
